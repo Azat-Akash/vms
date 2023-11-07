@@ -1,0 +1,100 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/*--------------------*/
+/*-------------start of preferences---------*/
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(/assets/bg_login.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.login {
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.login h1 {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 0em;
+}
+.login p {
+    font-size: 15px;
+    text-align: center;
+    margin-right: -119px;
+    margin-bottom: 50px;
+}
+
+.input-field input {
+    height: 40px;
+    width: 400px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #dceceb;
+    border: 2px solid #cccccc;
+    padding: 15px;
+    font-size: 20px;
+}
+.sign-in_forgot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+#sign-in {
+    height: 40px;
+    width: 100px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background-color: #03cfb4;
+    border: 2px solid #8e8e8e;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+#forgot {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#forgot:hover {
+    color: rgb(4, 240, 240);
+}
+
+#sign-in:hover {
+    background-color: rgb(3, 207, 207);
+    border: 2px solid rgba(0, 0, 0, 0.694);
+}
+
+#show {
+    position: absolute;
+    margin-left: -65px;
+    margin-top: 7px;
+    cursor: pointer;
+    border: 0px;
+    background-color: #dceceb;
+    color: #03cfb4;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#show:hover {
+    color: rgb(4, 240, 240);
+}
