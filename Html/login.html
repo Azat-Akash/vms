@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Login Page</title>
-        <link rel="stylesheet" href="\styles\style.css" />
+        <link rel="stylesheet" href="\styles\login.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -14,25 +14,22 @@
     </head>
     <body>
         <div id="site" class="content">
+            <div class="truck"></div>
             <div class="login">
                 <h1>Administrative Panel</h1>
-                <p>Vechile Management System</p>
+                <p id="vms">Vechile Management System</p>
                 <form>
                     <div class="input-group">
                         <div class="input-field">
-                            <input
-                                id="email"
-                                type="email"
-                                placeholder="Email"
-                                required
-                            />
+                            <p>Email</p>
+                            <input id="email" type="email" required />
                         </div>
 
                         <div class="input-field">
+                            <p>Password</p>
                             <input
                                 id="password"
                                 type="password"
-                                placeholder="Password"
                                 autocomplete="current-password"
                                 required
                             />
@@ -40,8 +37,8 @@
                         </div>
 
                         <div class="sign-in_forgot">
-                            <a id="forgot" href="#">Forgot Password?</a>
-                            <button type="button" id="sign-in">LOGIN</button>
+                            <button id="forgot" type="button">Forgot Password?</a>
+                            <button type="button" id="sign-in">Login</button>
                         </div>
                     </div>
                 </form>

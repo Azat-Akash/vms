@@ -5,6 +5,10 @@ const signInBtn = document.querySelector("#sign-in");
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 
+const forgotBtn = document.querySelector("#forgot");
+
+const model = {};
+
 signInBtn.onclick = async function () {
     const admin = {
         email: email.value,
