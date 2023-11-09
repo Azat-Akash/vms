@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="\styles\dashboard.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="header">
+                <a class="logo" href="login.html">
+                    <img
+                        src="/assets/icons8-truck-96.png"
+                        width="35px"
+                        height="32px"
+                    />
+                    <p id="site-name">TrackMaster</p>
+                </a>
+
+                <a id="profile" href="">
+                    <img
+                        src="/assets/icons8-male-user-96 (1).png"
+                        width="37px"
+                        height="35px"
+                    />
+                </a>
+            </div>
+
+            <div id="content" class="container-fluid">
+                <div id="sidebar" class="bg-light sidebar">
+                    <button type="button" class="sb-button vehicle">
+                        <img
+                            class="clicked"
+                            src="/assets/car-svgrepo-com.svg"
+                            alt=""
+                        />
+                        <p>Vehicles</p>
+                    </button>
+                    <button type="button" class="sb-button driver">
+                        <div>
+                            <img
+                                class="clicked"
+                                src="/assets/id-card-svgrepo-com.svg"
+                                alt=""
+                                width="40px"
+                            />
+                        </div>
+                        <p>Drivers</p>
+                    </button>
+                    <button type="button" class="sb-button task">
+                        <img
+                            class="clicked"
+                            src="/assets/file-2-svgrepo-com.svg"
+                            alt=""
+                            width="40px"
+                        />
+                        <p>Tasks</p>
+                    </button>
+                </div>
+
+                <div id="site">
+                    <div class="container">
+                        <div class="top"></div>
+                        <div class="columns"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/Javascript/driver.js"></script>
+        <script src="/Javascript/main.js"></script>
+    </body>
+</html>
