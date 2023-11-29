@@ -1,7 +1,5 @@
-const server =
-    "https://4f26172a-cec4-4fd9-adc2-28a21e50172f.mock.pstmn.io/login";
-
 const getUrl = window.location;
+const server = "loginUser";
 const baseUrl =
     getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split("/")[1];
 
@@ -10,22 +8,52 @@ const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 
 const forgotBtn = document.querySelector("#forgot");
+const showBtn = document.querySelector("#show");
 
-const model = {};
+showBtn.onclick = function () {
+    if (password.type === "password") {
+        password.type = "text";
+        document.getElementById("img-show").src = "/assets/login/hidden.png";
+    } else {
+        password.type = "password";
+        document.getElementById("img-show").src = "/assets/login/view (1).png";
+    }
+    console.log(showBtn);
+};
+let visible = true;
 
-signInBtn.onclick = async function () {
-    const admin = {
-        email: email.value,
-        password: password.value,
-    };
-    const body = JSON.stringify(admin);
+signInBtn.onclick = function () {
+    const form = document.getElementById("log-form");
+    const formData = new FormData(form);
 
-    const response = await fetch(server, {
-        body: body,
+    fetch("/loginUser", {
         method: "POST",
-    });
-    const responseBody = await response.text();
-    console.log(responseBody);
+        body: formData,
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("Success:", data);
+            // Handle success response if needed
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            // Handle error if needed
+        });
+    let invalid = `<p id="invalid" style="color:red; margin-top:5px;">**invalid password**</p>`;
 
-    location.replace(baseUrl + "/dashboard.html");
+    if (
+        email.value.toString().trim() != "admin@gmail.com" ||
+        password.value.toString().trim() != "777"
+    ) {
+        const $inputgroup = document.querySelector(".input-group");
+        console.log(visible);
+        if (visible) {
+            visible = false;
+            $inputgroup.insertAdjacentHTML("beforeend", invalid);
+        }
+    } else {
+        location.replace(baseUrl + "/driver.html");
+    }
+
+    //
 };

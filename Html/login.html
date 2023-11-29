@@ -17,8 +17,8 @@
             <div class="truck"></div>
             <div class="login">
                 <h1>Administrative Panel</h1>
-                <p id="vms">Vechile Management System</p>
-                <form>
+                <p id="vms">Vehicle Management System</p>
+                <form id="log-form">
                     <div class="input-group">
                         <div class="input-field">
                             <p>Email</p>
@@ -33,17 +33,26 @@
                                 autocomplete="current-password"
                                 required
                             />
-                            <button type="button" id="show">Show</button>
+                            <button type="button" id="show">
+                                <img
+                                    id="img-show"
+                                    src="/assets/login/view (1).png"
+                                    alt=""
+                                    width="25px"
+                                />
+                            </button>
                         </div>
 
                         <div class="sign-in_forgot">
-                            <button id="forgot" type="button">Forgot Password?</a>
+                            <button id="forgot" type="button">
+                                Forgot Password?
+                            </button>
                             <button type="button" id="sign-in">Login</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-        <script src="\Javascript\login.js"></script>
+        <script src="/Javascript/login.js"></script>
     </body>
 </html>

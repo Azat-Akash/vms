@@ -17,7 +17,7 @@
 .truck {
     width: 50%;
     height: 100vh;
-    background: url(/assets/caleb-ruiter-EmEQ6kK_5P0-unsplash.jpg);
+    background: url(/assets/login/caleb-ruiter-EmEQ6kK_5P0-unsplash.jpg);
     background-position: left;
     background-size: cover;
 }
@@ -91,14 +91,11 @@
 
 #show {
     position: absolute;
-    margin-left: -65px;
+    margin-left: -40px;
     margin-top: 11px;
     cursor: pointer;
     border: 0px;
-    background-color: #ffffff;
-    color: rgb(3, 58, 221);
-    font-weight: 700;
-    font-size: 18px;
+    background-color: #ffffff00;
 }
 
 #show:hover {
